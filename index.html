@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="">
+					<h3>What is TypeScript</h3>
+					<span> It's not another language ,it's static typed extension to JS</span>
+				</section>
+				<section>
+					<h4>TypeScripts :</h4>
+					<ul>
+						<li>using TS we can catch errors at compile time instead of at runtime</li>
+						<li>our applications became more predictable and easier to debug</li>
+						<li>TS brings to JavaScript:classes, interfaces, constructors, access, modifiers, generics ...</li>
+						</ul>
+				</section>
+				<section class="basicTypes">
+					<h4>Basic Types :</h4>
+					<ul>
+						<li>number</li>
+						<li>boolean</li>
+						<li>strings</li>
+						<li>any</li>
+						<li>array</li>
+						<li>tuple</li>
+						<li>enum</li>
+					</ul>
+					<ul>
+						<li>unknown</li>
+						<li>any</li>
+						<li>void</li>
+						<li>null</li>
+						<li>undefined</li>
+						<li>never</li>
+						<li>object</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Type assertions</h4>
+					<img src="./images/assertion.png" alt="">
+				</section>
+				<section class="customTypes">
+					<div>
+						<h4>Custom types in TypeScript</h4>
+						<img src="images/customTypes.png">
+					</div>
+					<div>
+						<h4>Nested Custom Types</h4>
+						<img src="images/nestedCustom.png">
+					</div>
+				</section>
+				<section>
+					<h4> Optional Properties</h4>
+					<img src="images/optionalPArametrs.png" alt="">
+				</section>
+				<section>
+					<h4>Indexable types</h4>
+					<img src="images/indexedType.png" alt="">
+				</section>
+				<section>
+					<h4>Interfaces</h4>
+					<img src="images/interFases.png" alt="">
+				</section>
+				<section>
+					<div>
+						<h4>Optional properties</h4>
+						<img src="images/interOpti.png" alt="">
+					</div>
+					<div>
+						<h4>Readonly properties</h4>
+						<img src="images/readInter.png" alt="">
+					</div>
+				</section>
+				<section>
+						<h4>Generic types</h4>
+						<img src="images/generoc.png" alt="">
+						<hr>	
+						<img src="images/gen2.png" alt="">
+				</section>
+				<section>
+					<h3>Thank You</h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
